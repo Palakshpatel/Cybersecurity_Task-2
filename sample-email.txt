@@ -1,0 +1,31 @@
+Return-Path: <alerts@paypal-security.com>
+Received: from mailout.hosting-provider.info (unknown [198.51.100.45])
+    by mail.example.com (Postfix) with ESMTPS id 123ABC
+    for <victim@example.com>; Mon, 22 Sep 2025 10:15:23 +0000 (UTC)
+Received-SPF: fail (domain of paypal.com does not designate 198.51.100.45 as permitted sender)
+Authentication-Results: mail.example.com;
+    spf=fail smtp.mailfrom=paypal-security.com;
+    dkim=none (message not signed);
+    dmarc=fail (p=none disallowed)
+From: PayPal <alerts@paypal-security.com>
+To: "Palaksh" <victim@example.com>
+Subject: Important: Account Verification Required
+Date: Mon, 22 Sep 2025 10:14:58 +0000
+Message-ID: <20250922101458.98765@mailout.hosting-provider.info>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<body>
+  <div style="font-family: Arial, sans-serif; color: #222;">
+    <img src="https://cdn.example.com/paypal-logo.png" alt="PayPal" width="120">
+    <h1>Important: Account Verification Required</h1>
+    <p>Dear Palaksh,</p>
+    <p>We detected suspicious activity on your PayPal account. Your account has been temporarily limited.</p>
+    <p><a href="http://secure-paypal.verify-account[.]com/login?user=palaksh">Click here to verify your account</a></p>
+    <p>If you do not verify within 24 hours your account will be suspended.</p>
+    <p>Sincerely,<br>PayPal Support Team</p>
+  </div>
+</body>
+</html>
